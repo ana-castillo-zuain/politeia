@@ -1,0 +1,557 @@
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+dic-01
+dic-02
+dic-03
+dic-04
+dic-05
+dic-06
+dic-07
+dic-08
+dic-09
+dic-10
+dic-11
+dic-12
+dic-13
+dic-14
+dic-15
+dic-16
+dic-17
+dic-18
+dic-19
+dic-20
+dic-21
+dic-22
+dic-23
+dic-24
+dic-25
+Promedio 
+CFK I: 1,71
+Promedio 
+NK: 2,49
+Promedio
+CFK II: 1,83
+Promedio
+MM: 2,27
+Promedio
+AF: 1,69
+Promedio 
+JM: 2,34
+Septiembre 2026
+ICG: 1,94
+Variación: -5,9%
+El Índice de Confianza en el Gobierno disminuyó 5,9% respecto del mes anterior
+1
+1. Evolución mensual
+La Escuela de Gobierno de la Universidad Torcuato Di Tella da a conocer el Índice de 
+Confianza en el Gobierno (ICG) correspondiente al mes de septiembre de 2026. El 
+ICG se confecciona desde noviembre de 2001 en base a una encuesta de opinión 
+pública a nivel nacional y se mide en una escala de 0 a 5.
+En septiembre, el ICG fue de 1,94 puntos, lo que representa una caída de 5,9% 
+respecto de agosto. Se trata del menor valor de la presidencia de Javier Milei, junto 
+con los registrados en septiembre de 2025 y en julio de 2026. Desde el fin del año 
+pasado el ICG disminuyó 21,4%. Este descenso se concentró en los primeros cinco 
+meses del año. Desde entonces el Índice ha oscilado en torno a un valor de 2,0, con 
+ascensos y caídas de magnitud modesta (y compatibles con el error muestral; ver 
+ficha técnica en la última página). 
+
+El siguiente gráfico compara la evolución del ICG durante la presidencia de Javier 
+Milei con los valores observados en las seis presidencias anteriores. Se toma como 
+inicio de cada mandato el primer mes completo de la gestión del/de la nuevo/a 
+presidente/a (por ejemplo, junio de 2003 para Néstor Kirchner y enero de 2024 para 
+Javier Milei).
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+1 7 13 19 25 31 37 43 49 55
+Índice de Confianza
+Meses desde el inicio de cada presidencia
+Confianza en el Gobierno por Presidencia
+E. Duhalde N. Kirchner C. Kirchner I C. Kirchner II
+M. Macri A. Fernández J. Milei
+Mes 46: elección
+del presidente
+siguiente
+Mes 33 
+El ICG durante la presidencia de Milei se ha mantenido en niveles relativamente 
+altos, comparables con los valores de Mauricio Macri, y por debajo de los de Néstor 
+Kirchner (las dos presidencias con mayor ICG promedio de las seis anteriores), en el 
+mismo periodo. En el mes 33 de la actual presidencia, el nivel del ICG es inferior al 
+que obtuvo el gobierno de Néstor Kirchner en el mismo momento de su gestión 
+(2,62; -26,1%). En cambio, el 1,94 de este mes es superior al observado en el mes 
+33 de los mandatos de Cristina Kirchner I (1,77; +9,4%), Mauricio Macri (1,75; 
++10,7%), Cristina Kirchner II (1,71; +13,6%) y Alberto Fernández (1,23; +57,4%).
+2
+En septiembre, los cinco componentes del ICG registraron descensos: Honestidad se 
+ubicó en 2,45 puntos (-2,9%), Capacidad para resolver problemas en 2,20 puntos (-
+4,0%), Eficiencia en 1,94 puntos (-3,5%) y la Evaluación general del gobierno en 1,60 
+puntos (-9,3%). Preocupación por el interés general presentó el mayor declive entre 
+los componentes (-12,3%), cayendo a 1,50 puntos.
+El promedio del ICG durante la gestión Milei desciende a 2,34 puntos, su registro más 
+bajo. Como referencia, los promedios durante las dos presidencias anteriores (las de 
+Mauricio Macri y Alberto Fernández) en el mismo tramo de sus gestiones fueron de 
+2,47 y 1,86 puntos, respectivamente.
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+ene-09
+ene-10
+ene-11
+ene-12
+ene-13
+ene-14
+ene-15
+ene-16
+ene-17
+ene-18
+ene-19
+ene-20
+ene-21
+ene-22
+ene-23
+ene-24
+ene-25
+ene-26
+Evolución Mensual de los Componentes del ICG: 
+Diciembre 2008-Presente
+Gobierno Interés Eficiencia Honestidad Capacidad
+CFK I CFK II MM AF JM
+3
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+dic-15
+jun-16
+dic-16
+jun-17
+dic-17
+jun-18
+dic-18
+jun-19
+dic-19
+jun-20
+dic-20
+jun-21
+dic-21
+jun-22
+dic-22
+jun-23
+dic-23
+jun-24
+dic-24
+jun-25
+dic-25
+jun-26
+Evolución Mensual de los Componentes del ICG: 
+Diciembre 2015-Presente
+Gobierno Interés Eficiencia Honestidad Capacidad
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+5.0
+dic-15
+jun-16
+dic-16
+jun-17
+dic-17
+jun-18
+dic-18
+jun-19
+dic-19
+jun-20
+dic-20
+jun-21
+dic-21
+jun-22
+dic-22
+jun-23
+dic-23
+jun-24
+dic-24
+jun-25
+dic-25
+jun-26
+Evolución Mensual del ICG: Diciembre 2015-Presente
+Promedio 
+MM: 2,27
+Promedio 
+AF: 1,69
+Promedio 
+JM: 2,34
+Para visualizar de manera más precisa la trayectoria del ICG durante el gobierno de 
+Javier Milei, los siguientes gráficos muestran la evolución mensual del Índice, y de 
+sus componentes, a partir de diciembre de 2015. 
+MM AF JM
+4
+La brecha de género de septiembre se ubica en 0,57 puntos, un valor levemente 
+superior al de agosto. El ICG entre los hombres es de 2,19 puntos (-3,0%), mientras 
+que entre las mujeres cae a 1,62 puntos (-9,2%).
+2. Género
+El segmento de personas de entre 18 y 29 años volvió a tener el nivel más elevado 
+del ICG en septiembre, aunque también presentó la mayor disminución del mes 
+(2,30; -17,9%). Es probable que este descenso (y el aún mayor ascenso del mes 
+anterior) se deban en parte al error muestral: este segmento es el que contiene el 
+menor número de casos y, por tanto, el de menor precisión estadística. El grupo de 
+personas mayores de 50 años registra 2,01 puntos (-0,5%). Por último, se verifica 
+una caída del ICG en el grupo de personas de entre 30 y 49 años (1,84; -7,7%).
+3. Edad
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+nov-23
+dic-23
+ene-24
+feb-24
+mar-24
+abr-24
+may-24
+jun-24
+jul-24
+ago-24
+sep-24
+oct-24
+nov-24
+dic-24
+ene-25
+feb-25
+mar-25
+abr-25
+may-25
+jun-25
+jul-25
+ago-25
+sep-25
+oct-25
+nov-25
+dic-25
+ene-26
+feb-26
+mar-26
+abr-26
+may-26
+jun-26
+jul-26
+ago-26
+sep-26
+Evolución del ICG por Rango Etario
+(Noviembre 2023 - Presente)
+18 a 29 30 a 49 +50
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+nov-23
+dic-23
+ene-24
+feb-24
+mar-24
+abr-24
+may-24
+jun-24
+jul-24
+ago-24
+sep-24
+oct-24
+nov-24
+dic-24
+ene-25
+feb-25
+mar-25
+abr-25
+may-25
+jun-25
+jul-25
+ago-25
+sep-25
+oct-25
+nov-25
+dic-25
+ene-26
+feb-26
+mar-26
+abr-26
+may-26
+jun-26
+jul-26
+ago-26
+sep-26
+Evolución del ICG por Sexo 
+(Noviembre 2023 - Presente)
+Mujeres Hombres
+5
+En el plano geográfico, el ICG presenta nuevamente su mayor valor entre quienes 
+residen en el interior del país, con 2,06 puntos (-8,4%). Dentro del AMBA, los 
+habitantes de la CABA se ubican en 1,84 puntos (-4,2%) y los del GBA en 1,72 
+puntos (+0,2%).
+4. Zona geográfica
+A diferencia del mes previo, el ICG de septiembre alcanza su nivel más elevado 
+entre quienes completaron el nivel secundario, con 2,02 puntos (+15,5%). La 
+mayor disminución se da entre quienes poseen nivel educativo terciario y/o 
+universitario (1,94; -14,4%), seguida por la observada en el segmento con 
+instrucción primaria (1,36; -11,2%).
+5. Nivel de instrucción
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+nov-23
+dic-23
+ene-24
+feb-24
+mar-24
+abr-24
+may-24
+jun-24
+jul-24
+ago-24
+sep-24
+oct-24
+nov-24
+dic-24
+ene-25
+feb-25
+mar-25
+abr-25
+may-25
+jun-25
+jul-25
+ago-25
+sep-25
+oct-25
+nov-25
+dic-25
+ene-26
+feb-26
+mar-26
+abr-26
+may-26
+jun-26
+jul-26
+ago-26
+sep-26
+Evolución del ICG por Zona Geográfica
+(Noviembre 2023 - Presente)
+CABA GBA Interior
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+nov-23
+dic-23
+ene-24
+feb-24
+mar-24
+abr-24
+may-24
+jun-24
+jul-24
+ago-24
+sep-24
+oct-24
+nov-24
+dic-24
+ene-25
+feb-25
+mar-25
+abr-25
+may-25
+jun-25
+jul-25
+ago-25
+sep-25
+oct-25
+nov-25
+dic-25
+ene-26
+feb-26
+mar-26
+abr-26
+may-26
+jun-26
+jul-26
+ago-26
+sep-26
+Evolución del ICG por Nivel de Instrucción
+(Noviembre 2023 - Presente)
+Primario Secundario Terciario/Universitario 6
+
+Al igual que en casi todos los meses anteriores, el ICG de septiembre fue mayor 
+entre quienes dicen no haber sido (ellos o sus familias) víctimas de delitos en los 
+últimos 12 meses (2,12; -1,4%) que entre quienes dicen haberlo sido (1,41; -
+17,4%). 
+6. Víctimas de delitos
+En septiembre se mantiene el patrón observado en los meses anteriores. El ICG 
+alcanza su nivel más elevado entre quienes creen que la situación económica 
+mejorará dentro de un año (4,03; -2,6%). Entre quienes creen que se mantendrá 
+igual, el ICG de septiembre es de 2,40 puntos (-7,1%). Por último, entre quienes 
+creen que la situación empeorará, el valor es 0,38 puntos (+13,0%).
+7. Perspectivas económicas
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+nov-23
+dic-23
+ene-24
+feb-24
+mar-24
+abr-24
+may-24
+jun-24
+jul-24
+ago-24
+sep-24
+oct-24
+nov-24
+dic-24
+ene-25
+feb-25
+mar-25
+abr-25
+may-25
+jun-25
+jul-25
+ago-25
+sep-25
+oct-25
+nov-25
+dic-25
+ene-26
+feb-26
+mar-26
+abr-26
+may-26
+jun-26
+jul-26
+ago-26
+sep-26
+Evolución del ICG por Victimización
+(Noviembre 2023 - Presente)
+Sí No
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+4.5
+nov-23
+dic-23
+ene-24
+feb-24
+mar-24
+abr-24
+may-24
+jun-24
+jul-24
+ago-24
+sep-24
+oct-24
+nov-24
+dic-24
+ene-25
+feb-25
+mar-25
+abr-25
+may-25
+jun-25
+jul-25
+ago-25
+sep-25
+oct-25
+nov-25
+dic-25
+ene-26
+feb-26
+mar-26
+abr-26
+may-26
+jun-26
+jul-26
+ago-26
+sep-26
+Evolución del ICG por Perspectivas Económicas
+(Noviembre 2023 - Presente)
+Mejor Igual Peor 7
+
+El ICG de septiembre fue de 1,94 puntos, lo que representa una disminución de 5,9% 
+respecto de agosto y de 21,4% desde el fin del año pasado. La mayor parte del 
+deterioro del Índice durante 2026 ocurrió entre enero y mayo, observándose  desde 
+entonces oscilaciones mensuales de magnitud modesta y sin una tendencia clara.
+Los cinco componentes del ICG cayeron este mes. Preocupación por el interés 
+general presenta el mayor deterioro, seguido por Evaluación general del gobierno. 
+Eficiencia, Honestidad y Capacidad presentan declives de menor magnitud.
+Los mayores descensos del mes se concentraron en los segmentos de 18 a 29 años, 
+entre quienes poseen instrucción terciaria/universitaria y entre quienes indicaron 
+que ellos o sus familias fueron víctimas de delito en los últimos 12 meses. 
+Ficha técnica
+Encuesta: realizada por Poliarquía Consultores.
+Universo: población general mayor de 18 años, residente en ciudades de más de 10.000 habitantes.
+Tipo de encuesta: telefónica.
+Características de la muestra: aleatoria, polietápica, estratificada por zonas para la selección de las 
+características y números telefónicos. Selección de los entrevistados en base a cuotas de sexo y edad.
+Tamaño de la muestra: 1000 casos en treinta y nueve localidades de todo el país.
+Error estándar del ICG para el total de la muestra: ±0,06. 
+Intervalo de confianza del ICG (95%): 1,81 – 2,06.
+Fechas del trabajo de campo: entre el 1 y el 9 de septiembre de 2026.
+En resumen
+Por cualquier consulta, contactarse con Carlos Gervasoni (cgervasoni@utdt.edu) 
+8

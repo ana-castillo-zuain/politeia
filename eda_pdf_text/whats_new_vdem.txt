@@ -1,0 +1,33 @@
+0.1 New in Version 16 compared to Version 15
+• New indicators and Indices
+– Other Indices Using V-Dem Data
+∗ Electoral Integrity Index (v2x electoral integrity)
+∗ Deliberative Democracy Stock (v2x delibdem stock)
+∗ Egalitarian Democracy Stock (v2x egaldem stock)
+∗ Electoral Democracy Stock (v2x polyarchy stock)
+∗ Liberal Democracy Stock (v2x lidem stock)
+∗ Participatory Democracy Stock (v2x partipdem stock)
+– External Variables
+∗ Cumulative Fatalities (Best Estimates) in Organized Violence (e ovctd)
+∗ Existence of Organized Violence (e ovexist)
+• Other new or modified information
+– Changes to the Measurement Model
+∗ We have changed the prior distribution for universal thresholds γkµ in the V-Dem
+measurement model from a uniform distribution ( U(-6,6)) to a normal distribution
+(N(0,6)). We found that the uniform priors were too restrictive and often too uninfor-
+mative within their bounds to identify unique stationary distributions. After extensive
+analyses, we found that relatively wide normal distibutions provide roughly identical
+point and uncertainty estimates for latent country-year values as models that use uni-
+form distributions, and tend to converge at a higher rate. Nevertheless, data sparsity
+still creates diffculties for the identification of a unique stationary distribution for
+some variables. See Pemstein et al. (2026) for further information about the V-Dem
+Measurement Model.
+– Regimes Survey
+∗ The Regimes survey was not updated in v15, but has been updated in v16. Regime
+variables now have data up to 2025.
+– Coder-level Datasets
+∗ The coder-level datasets have been re-uploaded, and coder ids have been changed.
+Coder ids remain comparable across coder-level dataset versions.
+For more details on changes to previous versions of the dataset, please see Appendix F or the specific
+version of the codebook. All previous codebook versions are available at https://www.v-dem.net/
+data/dataset-archive/.

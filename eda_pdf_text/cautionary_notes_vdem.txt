@@ -1,0 +1,65 @@
+Cautionary Notes
+V-Dem is firmly committed to full transparency and release of our data. Therefore, we ask users to
+take the following cautionary notes into consideration when using our data.
+• The V-Dem measurement model, which we use to aggregate expert-coded data, assumes that
+each country-year-variable has five or more coders. For a few country-year-variables – and
+especially in the context of countries with a small population – it has been impossible to achieve
+this target. Country-year-variable combinations with fewer than five expert coders are more
+likely to show substantial changes in their point estimates than countries with five or more
+coders, since individual expert changes have more weight in these contexts. Unfortunately,
+these changes may be more extreme than the actual changes in the latent concept the variable
+is intended to measure. We therefore strongly advise against using point estimates for country-
+year-variable combinations with three or fewer coders. To allow users to filter these observations
+out of the dataset we provide a variable with the suffix "_nr" (number of raters/coders), which
+provides the count of experts for each country-year-variable combination.
+– We have already removed observations forExclusion and Legitimation indicators (section
+3.14 and section 3.15) with less than three coders per country-date (*_nr < 3). Further-
+more, we have removed observations inExclusion indices (section 5.6) where less than
+three component country-year-variables had three or more coders.
+– We have removed observations forCivic and Academic Spaceindicators (section 3.16) with
+less than 3 coders per country-date (*_nr < 3).
+• Point estimates can jump around slightly across iterations of the dataset due to the simulation-
+based nature of the estimation process and expert turnover. Consumers of the data should
+therefore always be attentive to the uncertainty about the estimates. Indeed, this uncertainty
+provides vital information about the degree to which one can be certain that a change in a score
+reflects an actual change in the level of the concept being measured.
+• We advise caution when using variables that had convergence issues. Please see individual code-
+book entries for additional information. For details on interpreting convergence information,
+please refer toVariable Entry Clarifications(section 1.4.5), the Methodology Document, and
+Pemstein et al. (2026).
+– The following variables had issues with convergence in v16:
+v2caautmob, v2caconmob, v2caviol, v2cltrnslw, v2csgender, v2dlencmps, v2eldonate,
+v2elpaidig, v2elpdcamp, v2elpubfin, v2elrgstry, v2exdjcbhg, v2exdjdshg, v2peedueq,
+v2pepwrses, v2pscohesv, v2psprlnks, v2regoppgroupssize, v2smforads, v2smonper,
+v2x_cspart, v2xeg_eqaccess, v2xeg_eqdr.
+• We do not account for variation in expert reliability or scale perception when estimating values
+for percentage variables. As a result, expert error such as miscoding can result in substantial
+changes to the estimates of these variables irrespective of actual changes in the constructs they
+represent. We therefore recommend that users exercise caution when interpreting the three
+percentage variables:
+– Female journalists (v2mefemjrn)
+– State authority over territory (v2svstterr)
+– Weaker civil liberties population (v2clsnlpct)
+• We constantly improve the coding of factual data (A) to make it as accurate as possible. This
+may result in changes at the index-level.
+• Historical V-Dem:We advise users to exercise caution before running analysis on the time series
+extending across both the historical and contemporary coding periods. Specifically, we note an
+issue with Historical V-Dem A-type variables. In the historical part of the time series, one or
+more coders conducted the historical part of the time series independently of the existing coding
+in the V-Dem dataset. This practice extended to the overlap period with the contemporary
+V-Dem time series (typically 1900-1920).
+For many of these historical variables, we have checked the consistency of the coding, further
+scrutinized the sources, and determined which coding represents the most appropriate score
+after deliberation. We have subsequently made the appropriate adjustments to the data. For
+other historical A variables we have yet to finalize this process. For these variables, the scores
+reported for the overlap period in the dataset are the contemporary V-Dem scores by default.
+This coding decision means that in the case of countries where there is disagreement between
+the historical and contemporary coding in the starting year for the contemporary time series
+(typically 1900)1, there may be artificial changes between that year and the year before that do
+not necessarily reflect a real-world change in the political system in the country.
+Please also note that for the variables where there is not full correspondence between the
+historical (1789-1920) and contemporary (1900-2025) coding, we also provide the historical
+coding of the variables in their original form as separate variables, carrying a "v3" rather than
+a "v2" prefix on the variable tag. These "v3" variables can be found in a separate section of the
+codebook.
+1For more information on the coding years coverage for each country, see the V-Dem Country Coding Unit document.
