@@ -1,0 +1,357 @@
+Preservación de 
+Resultados 
+Electorales
+Estándar para el almacenamiento y preservación 
+de resultados electorales
+Documentación Técnica
+
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+Sumario
+1. Objetivo.........................................................................................................................................................3
+2. Glosario.........................................................................................................................................................3
+3. Estándar de almacenamiento y preservación de datos.................................................................. 3
+3.1. Introducción....................................................................................................................................................... 3
+3.2. Resultados electorales................................................................................................................................... 4
+3.3. Ámbitos electorales........................................................................................................................................ 7
+3.4. Colores de agrupaciones políticas.............................................................................................................. 8
+3.5. Definiciones sobre los formatos de archivo............................................................................................. 8
+4. Convenciones de nomenclaturas utilizadas.......................................................................................9
+4.1. Identificadores de distritos........................................................................................................................... 9
+4.2. Identificadores de cargos electorales........................................................................................................ 9
+4.3. Identificadores de tipo de elección........................................................................................................... 10
+4.4. Identificadores de tipo de recuento......................................................................................................... 10
+5. Ejemplos de archivos CSV.....................................................................................................................10
+6. Referencias................................................................................................................................................10
+Control de Documentación.........................................................................................................................11
+Dirección Nacional Electoral - 2/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+1. Objetivo
+Definir  el  formato  de  almacenamiento  definitivo  de  los  datos  electorales  con  el  fin  de  preservar  la 
+información de un modo estándar, sencillo, de fácil acceso y procesamiento.
+Asimismo, utilizar el presente estándar en los Sistemas de Recuento para la entrega de datos finales del  
+Recuento Provisional de Resultados a la Dirección Nacional Electoral del Ministerio del Interior.
+2. Glosario
+Para unificar la nomenclatura se detallan a continuación algunos términos que se usarán con frecuencia.
+• Recuento Provisional de Resultados: Es el proceso global que incluye la transmisión, digitación,  
+totalización y publicación de resultados electorales, como parte del escrutinio provisorio, de manera  
+independiente al escrutinio definitivo que lleva a cabo el Poder Judicial.
+• Sistema de Transmisión (ST): Es el sistema que será responsable de:
+◦ Escaneo  de  Telegramas:  Digitalización  del  documento  electoral  utilizado  para  el  Recuento 
+Provisional de Resultados y la generación de metadatos asociados.
+◦ Transmisión  de  Telegramas:  Envío  por  medios  digitales  y  seguros  del  documento  electoral 
+digitalizado y los metadatos asociados al mismo.
+◦ Entrega de Telegramas: Poner a disposición del Sistema de Recuento los telegramas y sus  
+metadatos asociados.
+• Sistema de Recuento (SR): Es el sistema que será responsable de:
+◦ Digitación de Telegramas: transcripción y carga de los datos contenidos en los telegramas  
+mediante ingreso manual vía sistema.
+◦ Totalización de Telegramas: conteo y suma de los votos recibidos por cada agrupación política  
+en cada cargo y ámbito electoral en que participa.
+◦ Publicación de Resultados: publicación en Internet mediante páginas web, aplicaciones móviles  
+y servicios de datos de los resultados electorales provisorios.
+• Ámbito  Electoral  (AE):  Es  una  delimitación  territorial  utilizada  para  el  agrupamiento  de  datos 
+electorales, sobre la cual se eligen cargos. Puede coincidir con un límite político (una provincia) o  
+bien  puede  ser  un  agrupamiento  de  otros  ámbitos,  como  por  ejemplo  una  sección  es  el  
+agrupamiento de circuitos.
+• Distrito  Electoral  (DE):  Ámbito  Electoral  de  mayor  jerarquía,  que  se  utiliza  para  representar  las 
+provincias y la Ciudad Autónoma de Buenos Aires.
+• Sección Electoral (SE): Es una subdivisión de un Distrito Electoral. Generalmente coincide con los  
+departamentos de las provincias o las comunas en CABA.
+• Sección Provincial (SP): Es un agrupamiento de secciones electorales, que se da las provincias de  
+Buenos Aires, Mendoza y Tucumán.
+• Circuito  Electoral  (CE):  Se  tratan  de  subdivisiones  de  las  secciones  electorales.  Agrupan  a  los 
+electores en razón de la proximidad de los domicilios, con fines logísticos.
+• Local de Votación (LV): Es un establecimiento, generalmente educativo, donde se lleva a cabo el  
+proceso  de  votación.  La  mayoría  de  ellos  contará  con  un  kit  de  transmisión  para  digitalizar  y 
+transmitir los telegramas hacia los Centros de Datos (CD) del Sistema de Transmisión.
+• Mesa de Votación (MV): Es la mínima unidad de agrupamiento de datos electorales, las cuales se  
+encuentran ubicadas en los locales de votación (LV).
+3. Estándar de almacenamiento y preservación de datos
+3.1. Introducción
+El  estándar  de  almacenamiento,  como  se  mencionó  en  los  objetivos,  tiene  como  finalidad  asegurar  la 
+Dirección Nacional Electoral - 3/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+preservación de los datos electorales, con lo cual la información se mantendrá en archivos de texto sin  
+formato con valores separados por comas (CSV).
+Los archivos que se utilizarán por cada elección son:
+• resultados electorales
+• ámbitos electorales
+• colores de agrupaciones políticas
+A continuación se detallan cada una de las columnas de los archivos CSV definidos.
+Cabe destacar que el alcance de los ID presentados en cada columna, es por elección, ya que no hay  
+garantía de consistencia de los mismos a través de los distintos procesos electorales.
+Como aclaración, se indica que existe redundancia explícita entre los distintos archivos CSV presentados, la  
+cual se utiliza con fines de preservación y representación de datos según fue generada por cada uno de los  
+orígenes de datos, y con el objetivo de facilitar la importación de los mismos, conservando las relaciones  
+entre entidades.
+3.2. Resultados electorales
+Nombre: año
+Tipo: Entero
+Descripción: Es el año calendario en el cual se lleva a cabo la elección.
+Nombre: eleccion_tipo
+Tipo: Cadena de caracteres
+Descripción: Es el tipo de elección.
+Valores esperados:PASO, GENERAL, SEGUNDA VUEL TA
+Nombre: eleccion_id
+Tipo: Entero
+Descripción: Indica el identificador numérico del tipo de elección.
+Nombre: recuento_tipo
+Tipo: Cadena de caracteres
+Descripción: Indica el tipo de recuento origen de los datos
+Valores esperados: PROVISORIO, DEFINITIVO
+Nombre: recuento_id
+Tipo: Entero
+Descripción: Indica el identificador numérico del tipo de recuento.
+Nombre: padron_tipo
+Tipo: Cadena de caracteres
+Descripción: Indica el tipo de padrón del cual provienen los datos
+Valores esperados: NORMAL, COMANDO, PRIVADOS DE LA LIBERTAD, RESIDENTES EN EL EXTERIOR
+Dirección Nacional Electoral - 4/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+Nombre: distrito_id
+Tipo: Entero
+Descripción: Indica el identificador numérico del distrito origen de los datos.
+Nombre: distrito_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre del distrito origen de los datos.
+Valores esperados: Ver valores descriptos en la sección 4.1 - Identificadores de distritos.
+Nombre: seccionprovincial_id
+Tipo: Entero
+Descripción: Indica el identificador numérico de la sección provincial origen de los datos.
+Nombre: seccionprovincial_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica la sección provincial sobre la cual se informan datos. Puede ser nulo si el distrito no  
+tiene secciones provinciales.
+Nombre: seccion_id
+Tipo: Entero
+Descripción: Indica el identificador numérico de la sección origen de los datos.
+Nombre: seccion_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre de la sección origen de los datos.
+Nombre: circuito_id
+Tipo: Cadena de caracteres
+Descripción: Indica el identificador numérico o alfanumérico del circuito origen de los datos.
+Nombre: circuito_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre del circuito origen de los datos.
+Nombre: mesa_id
+Tipo: entero
+Descripción: Identificador de la mesa origen de los datos.
+Dirección Nacional Electoral - 5/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+Nombre: mesa_tipo
+Tipo: Cadena de caracteres
+Descripción: Indicador del tipo de mesa origen de los datos.
+Valores esperados: NATIVOS, EXTRANJEROS
+Nombre: mesa_electores
+Tipo: Entero
+Descripción: Cantidad de electores de la mesa origen de los datos.
+Nombre: cargo_id
+Tipo: Entero
+Descripción: Identificador del cargo para el cual se han contado los votos.
+Nombre: cargo_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre del cargo para el cual se han contado los votos.
+Valores sugeridos: Ver valores descriptos en la sección 4.2 - Identificadores de cargos electorales.
+Nombre: agrupacion_id
+Tipo: Cadena de caracteres
+Descripción: Indicador de la agrupación política. Puede ser nulo en el caso de votos no positivos.
+Nombre: agrupacion_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica nombre de la agrupación política a la cual se han consignado los votos. Puede ser nulo  
+en el caso de votos no positivos.
+Nombre: lista_numero
+Tipo: Cadena de Caracteres
+Descripción: Es el número de la lista de la agrupación política a la cual se han consignado los votos. Puede  
+ser nulo en el caso de votos no positivos y en caso de elecciones generales.
+Nombre: lista_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre de la lista a la cual se han consignado los votos. Puede ser nulo en el caso de  
+votos no positivos y en caso de elecciones generales.
+Nombre: votos_tipo
+Tipo: Cadena de caracteres
+Descripción: Indica el tipo de votos que se han contabilizado.
+Valores esperados: POSITIVO, EN BLANCO, IMPUGNADO, RECURRIDO, NULO, COMANDO
+Dirección Nacional Electoral - 6/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+Nombre: votos_cantidad
+Tipo: Entero
+Descripción: Cantidad de votos contabilizados
+Nombre: estado_final
+Tipo: Cadena de caracteres
+Descripción: Indica si el telegrama ha sido totalizado en el recuento provisional. Este campo podrá ser nulo  
+para los recuentos definitivos
+Valores esperados: ESCRUTADO, NO ESCRUTADO
+3.3. Ámbitos electorales
+Nombre: año
+Tipo: Entero
+Descripción: Es el año calendario en el cual se lleva a cabo la elección.
+Nombre: distrito_id
+Tipo: Entero
+Descripción: Indica el identificador numérico del distrito origen de los datos.
+Nombre: distrito_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre del distrito origen de los datos.
+Valores esperados: Ver valores descriptos en la sección 4.1 - Identificadores de distritos.
+Nombre: seccionprovincial_id
+Tipo: Entero
+Descripción: Indica el identificador numérico de la sección provincial origen de los datos.
+Nombre: seccionprovincial_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre de la sección provincial origen de los datos.
+Nombre: seccion_id
+Tipo: Entero
+Descripción: Indica el identificador numérico de la sección origen de los datos.
+Nombre: seccion_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre de la sección origen de los datos.
+Dirección Nacional Electoral - 7/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+El archivo contendrá la información redundante de cada distrito por cada sección (departamento, partido o  
+comuna) en que se subdivide el mismo. Los identificadores en él almacenados se deben corresponder con  
+los almacenados en los archivos de resultados, sección 3.2.
+3.4. Colores de agrupaciones políticas
+Nombre: año 
+Tipo: Entero 
+Descripción: Es el año calendario en el cual se lleva a cabo la elección. 
+Nombre: distrito_id
+Tipo: Entero
+Descripción: Indica el identificador numérico del distrito origen de los datos.
+Nombre: distrito_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica el nombre del distrito origen de los datos.
+Valores esperados: Ver valores descriptos en la sección 4.1 - Identificadores de distritos.
+Nombre: agrupacion_id
+Tipo: Cadena de caracteres
+Descripción: Indicador de la agrupación política. Puede ser nulo en el caso de votos no positivos.
+Nombre: agrupacion_nombre
+Tipo: Cadena de caracteres
+Descripción: Indica nombre de la agrupación política a la cual se han consignado los votos. Puede ser nulo  
+en el caso de votos no positivos.
+Nombre: agrupacion_color
+Tipo: Cadena de caracteres
+Descripción: Indica en formato hexadecimal RGB el color representativo de la agrupación política, con 6  
+caracteres, sin canal Alfa.
+3.5. Definiciones sobre los formatos de archivo
+Los archivos CSV deberán cumplir con lo especificado por la Dirección Nacional de Gobierno Abierto 1, con lo 
+cual se deberán respetar las siguientes indicaciones:
+• Los campos (columnas) se separan por comas «,».
+• Los registros (filas) se separan por saltos de línea «\n».
+• Los números decimales utilizan el punto «.» para separar la parte entera de la parte decimal.
+• Se utilizan las comillas dobles «"» como carácter de entrecomillado. Los valores en tablas  
+CSV que incluyen dentro de sí caracteres especiales como «,» o «"», deben estar encerrados  
+entre «"» para su correcta interpretación.
+Algunas versiones alternativas de esta forma de publicar datos usan otros separadores como punto y coma  
+1  Ver https://datosgobar.github.io/paquete-apertura-datos/guia-abiertos/#csv
+Dirección Nacional Electoral - 8/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+(;) o pipe (|), pero la recomendación para toda la Administración Pública Nacional se basa en la versión de  
+CSV estándar, indicada por la especificación RFC4180 y las pautas de la W3C.
+También se debe tener en cuenta:
+• La codificación de los archivos será siempre UTF-8.
+• La primera fila siempre contiene los nombres de los campos, los cuales estarán en minúscula.
+• No se deben repetir nombres entre los campos.
+• No se debe colocar espacios al principio ni al final del nombre de un campo, o de un valor.
+• Tanto los campos como los valores deben estar separados por comas «,».
+• En el caso de que un valor contenga el carácter separador «,» o cualquiera de los caracteres  
+que separan las líneas «\n», el valor completo debe ser encerrado entre comillas dobles «"».  
+Esto indica que el carácter no cumple el rol de separar columnas o filas, sino que es parte de  
+un valor.
+4. Convenciones de nomenclaturas utilizadas
+A continuación se detallan algunas convenciones de uso para la codificación de valores frecuentes que se  
+utilizarán en los conjuntos de datos.
+4.1. Identificadores de distritos
+ID Distrito
+1 CIUDAD AUTÓNOMA DE BUENOS AIRES
+2 BUENOS AIRES
+3 CATAMARCA
+4 CÓRDOBA
+5 CORRIENTES
+6 CHACO
+7 CHUBUT
+8 ENTRE RÍOS
+9 FORMOSA
+10 JUJUY
+11 LA PAMPA
+12 LA RIOJA
+13 MENDOZA
+14 MISI Indica el identificador numérico del tipo de elección.ONES
+15 NEUQUÉN
+16 RÍO NEGRO
+17 SAL TA
+18 SAN JUAN
+19 SAN LUIS
+20 SANTA CRUZ
+21 SANTA FE
+22 SANTIAGO DEL ESTERO
+23 TUCUMÁN
+24 TIERRA DEL FUEGO A.I.A.S.2
+2 Abreviación de TIERRA DEL FUEGO, ANTÁRTIDA E ISLAS DEL ATLÁNTICO SUR.
+Dirección Nacional Electoral - 9/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+4.2. Identificadores de cargos electorales
+Se detallan a continuación las variaciones en los nombres de los cargos electorales de acuerdo a los  
+distritos involucrados, identificados por el ID.
+ID Otros Distritos C.A.B.A. (1) SAN JUAN (18) SANTA CRUZ (20) CÓRDOBA (4) RÍO NEGRO (16)
+1 PRESIDENTE/A
+2 SENADOR/A NACIONAL
+3 DIPUTADO/A NACIONAL
+4 GOBERNADOR/A JEFE/A DE GOBIERNO
+5 SENADOR/A PROVINCIAL DIPUTADO/A PROVINCIAL DEPARTAMENTAL DIPUTADO/A PROVINCIAL POR MUNICIPIO LEGISLADOR/A DEPARTAMENTAL LEGISLADOR/A CIRCUITAL
+6 DIPUTADO/A PROVINCIAL DIPUTADO/A DE LA CIUDAD DIPUTADO/A PROVINCIAL PROPORCIONAL DIPUTADO/A PROVINCIAL DISTRITO ÚNICO LEGISLADOR/A DISTRITO ÚNICO LEGISLADOR/A PROPORCIONAL
+7 INTENDENTE/A
+8
+PARLAMENTARIO/A 
+MERCOSUR 
+NACIONAL
+9
+PARLAMENTARIO/A 
+MERCOSUR 
+PROVINCIAL
+10 CONCEJAL/A
+MIEMBRO DE 
+JUNTA 
+COMUNAL
+4.3. Identificadores de tipo de elección
+ID Tipo de elección
+1 PASO
+2 GENERALES
+3 SEGUNDA VUEL TA
+4.4. Identificadores de tipo de recuento
+ID Tipo de recuento
+1 PROVISORIO
+2 DEFINITIVO
+5. Ejemplos de archivos CSV
+Anexos  al  presente  documento  pueden  encontrarse  archivos  CSV  de  ejemplo  de  acuerdo  a  las  
+especificaciones mencionadas anteriormente.
+Dirección Nacional Electoral - 10/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+6. Referencias
+• Guía para la publicación de datos abiertos:  https://datosgobar.github.io/paquete-apertura-
+datos/guia-abiertos/
+• RFC 4180, Formato CSV: https://datatracker.ietf.org/doc/html/rfc4180
+• Recomendaciones de la W3C para tablas CSV https://www.w3.org/TR/tabular-data-model/
+• Introducción al archivo CSV: https://es.wikipedia.org/wiki/Valores_separados_por_comas
+Dirección Nacional Electoral - 11/12
+Estándar para el almacenamiento y preservación de resultados electorales | 1.0.7
+Control de Documentación
+Título Estándar para el almacenamiento y preservación de resultados electorales
+Asunto Documentación Técnica
+Código de Documento DINE-PRE
+Elaborado por María José Odriosola, Federico Lazcano Elaboración 20/12/2021
+Revisado por Bianca Giacomino, Ramiro San Juan Revisión 22/02/2022
+Aprobado por Marcos Schiavi Publicación 22/03/2022
+Nombre de Archivo PreservacionResultadosElectorales_1.0.7
+Versión Revisor Fecha Publicación Resumen de Cambios
+1.0.1 María José Odriosola 11/04/2022 Agregamos campo cargo_id, y modificamos el campo cargo_nombre.
+1.0.2 María José Odriosola, Federico Lazcano 9/8/2022 Agregamos campo recuento_id y eleccion_id. Agregamos convenciones de uso para identificadores.
+1.0.3 Federico Lazcano, María José Odriosola 27/3/2023 Aclaraciones menores, anexado de ejemplos en CSV, agregado de año en colores de agruopaciones políticas.
+1.0.4 Federico Lazcano, María José Odriosola 27/5/2023 Agregado detalle de variaciones de cargos electorales en distritos.
+1.0.5
+Federico Lazcano, 
+Marcos Buero, Ramiro 
+San Juan
+13/09/2023 Se elimina el CSV de Locales de Votación (LV) del alcance del documento.
+1.0.6 Federico Lazcano 24/10/23 Se corrigen y amplían los CSV anexos al presente documento.
+1.0.7 Federico Lazcano 17/11/23 Se agrega el campo «estado_final» a los resultados electorales. Se agrega el campo «año» 
+Dirección Nacional Electoral - 12/12
